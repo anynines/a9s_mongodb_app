@@ -1,3 +1,5 @@
+<% creds = JSON.parse(ENV['VCAP_SERVICES'])['a9s-mongodb'].first['credentials'] %>
+
 development:
   # Configure available database clients. (required)
   clients:
@@ -134,3 +136,12 @@ test:
           mode: primary
         max_pool_size: 1
 
+productions:
+  clients:
+    default:
+      database: <%= creds['default_database'] %>
+      hosts: <%= creds['hosts'].to_json %>
+      options:
+        raise_not_found_error: false
+        user: <%= creds['username'] %>
+        password: <%= creds['password'] %>

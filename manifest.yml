@@ -5,7 +5,3 @@ applications:
   path: .
   buildpack: https://github.com/cloudfoundry/ruby-buildpack
   command: bundle exec rails s -p $PORT
-  services:
-    - mc1
-  env:
-    RAILS_ENV: development
