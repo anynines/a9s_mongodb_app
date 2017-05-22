@@ -1,28 +1,25 @@
-== README
+Getting started
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+On pass.anynines.com
 
-Things you may want to cover:
+ - Create a service instance of MongoDB
 
-* Ruby version
+ - Export the Service name as an environment variable in the manifest.yml files
 
-* System dependencies
+ - Deploy the app (It will most probably fail)
 
-* Configuration
+ - Bind the service you created to this app
 
-* Database creation
+ - Re-stage the app
 
-* Database initialization
+On your local
 
-* How to run the test suite
+ - deploy MongoDB bosh release on your local (https://github.com/anynines/mongodb-boshrelease/)
 
-* Services (job queues, cache servers, search engines, etc.)
+ - set the service name as an environment variable (SERVICE_NAME)
 
-* Deployment instructions
+ - set the VCAP_SERVICES environment variable
 
-* ...
+ - Connect your app to the local deployed service
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+ - Run the rail server
