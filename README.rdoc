@@ -1,25 +1,26 @@
-Getting started
+#Getting started
 
-On pass.anynines.com
+##On pass.anynines.com
 
- - Create a service instance of MongoDB
+* Create a service instance of MongoDB
 
- - Export the Service name as an environment variable in the manifest.yml files
+* Export the Service name as an environment variable in the
+   manifest.yml files
 
- - Deploy the app (It will most probably fail)
+* Deploy the app (It will most probably fail)
 
- - Bind the service you created to this app
+* Bind the service you created to this app
 
- - Re-stage the app
+* Re-stage the app
 
-On your local
+##On your local
 
- - deploy MongoDB bosh release on your local (https://github.com/anynines/mongodb-boshrelease/)
+* deploy MongoDB bosh release on your local (https://github.com/anynines/mongodb-boshrelease/)
 
- - set the service name as an environment variable (SERVICE_NAME)
+* set the service name as an environment variable (SERVICE_NAME)
 
- - set the VCAP_SERVICES environment variable
+* set the VCAP_SERVICES environment variable
 
- - Connect your app to the local deployed service
+* Connect your app to the local deployed service
 
- - Run the rail server
+* Run the rail server
