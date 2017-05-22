@@ -1,6 +1,6 @@
-#Getting started
+# Getting started
 
-##On pass.anynines.com
+## On pass.anynines.com
 
 * Create a service instance of MongoDB
 
@@ -13,7 +13,7 @@
 
 * Re-stage the app
 
-##On your local
+## On your local
 
 * deploy MongoDB bosh release on your local (https://github.com/anynines/mongodb-boshrelease/)
 
