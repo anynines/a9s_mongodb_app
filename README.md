@@ -24,3 +24,5 @@
 * Connect your app to the local deployed service
 
 * Run the rail server
+
+* Open http://localhost:3000/ in your browser
